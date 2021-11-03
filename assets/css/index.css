@@ -1,0 +1,275 @@
+.headerpic{
+    width: 100%;
+    display: block;
+}
+body{
+    background-color:rgb(156, 156, 156);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+}
+.menu-button{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    flex: 1;
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    transition: 400ms;
+    border: none;
+}
+.menu-button:hover{
+    display: block;
+    text-decoration: none;
+    background-color: black;
+}
+.menu-button > a{
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 15pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    margin: 8px;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+.dropdown-container{
+    display: none;
+    opacity: 0;
+    height: 0px;
+    background-color: whitesmoke;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+}
+.dropdown-container:hover{
+    display: inline-block;
+    
+}
+.dropdown-container > a{
+    display: block;
+}
+.dropdown-menu-guitars{
+    position: relative;
+    flex: 1;
+    z-index: 2;
+}
+.dropdown-menu-guitars:hover > .menu-button{
+    background-color: black;
+
+}
+.dropdown-menu-accessories:hover > .menu-button{
+    background-color: black;
+}
+.dropdown-menu-accessories{
+    position: relative;
+    flex: 1;
+    z-index: 2;
+}
+.dropdown-menu-guitars:hover .dropdown-container{
+    display: inline-block;
+    opacity: 1;
+    transition: 400ms;
+    height: fit-content;
+    margin: 0;
+}
+.dropdown-item{
+    list-style: none;
+
+}
+.dropdown-item > a{
+    color: black;
+    text-decoration: none;
+    font-size: 15pt;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#text{
+    font-size: 12pt;
+}
+.dropdown-menu-accessories:hover .dropdown-container{
+    display: inline-block;
+    opacity: 1;
+    transition: 400ms;
+    height: fit-content;
+    margin: 0;
+}
+.about{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-left: 100px;
+    padding-right: 600px;
+    padding-top: 30px;
+}
+.about > div{
+    text-align: justify;
+}
+.contact{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin: 16px 48px 16px;
+}
+.textblock{
+    justify-content: flex-start;
+}
+.map{
+    margin: 16px 36px 0;
+}
+.left-aligned{
+    display: flex;
+    justify-content: center;
+}
+.home{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.pagebottom{
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+}
+.news-button-container{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    display: inline-flex;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+
+}
+.news-button-container .news-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    background-color: whitesmoke;
+    width: 40%;
+    max-height: 50%;
+    text-align: left;
+    padding: 16px;
+    user-select: none;
+    transition: 00.3s;
+}
+.news-button-container:hover .news-text{
+    background-color: black;
+    color: whitesmoke;
+}
+.news-button-container > img{
+    transition: 00.3s;
+    opacity: 0.7;
+}
+.news-button-container:hover > img{
+    opacity: 1;
+}
+.footer-container-row{
+    background-color: black;
+    color: whitesmoke;
+    display: block;
+    width: 100%;
+}
+.footer-column{
+    margin-left: 36px;
+    margin-right: 36px;
+}
+.footer-column .logo{
+    display: block;
+}
+.footer-column .content{
+    display: block;
+}
+.footer-column .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter-description{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.newsletter-description > p{
+    font-size: 16px;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+}
+.row{
+    list-style: none;
+    border-top: 1px solid;
+    margin: 36px 16px 0;
+    padding: 0;
+}
+.footer-list > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer-bottom > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer-bottom{
+    margin: 16px 0 16px;
+}
+.guitar-button-container{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    display: inline-flex;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+
+}
+.guitar-button-container .guitar-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    background-color: whitesmoke;
+    width: 80%;
+    max-height: 50%;
+    text-align: left;
+    padding: 16px;
+    user-select: none;
+    transition: 00.3s;
+}
+.guitar-button-container:hover .guitar-text{
+    background-color: black;
+    color: whitesmoke;
+}
+.guitar-button-container > img{
+    transition: 00.3s;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+.guitar-button-container:hover > img{
+    opacity: 1;
+}
+.guitar-container-link{
+    width: 280px;
+    height: 280px;
+    margin: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+.news-container-link{
+    width: 350px;
+    height: 235px;
+    margin: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
