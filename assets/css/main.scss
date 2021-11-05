@@ -119,6 +119,19 @@ body {
         }
 }
 
+.textblock {
+    justify-content: flex-start;
+}
+
+.map {
+    margin: 16px 36px 0;
+}
+
+.left-aligned {
+    display: flex;
+    justify-content: center;
+}
+
 .news-button-container{
     width: 100%;
     height: 100%;
