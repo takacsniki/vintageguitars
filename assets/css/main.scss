@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color:rgb(156, 156, 156);
+    background-color:rgb(236, 236, 236);
 }
 
 .navbar {
@@ -31,7 +31,7 @@ body {
         a {
             text-decoration: none;
             display: inline-block;
-            color: whitesmoke;
+            color: white;
             font-size: 15pt;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
@@ -47,7 +47,7 @@ body {
     display: none;
     opacity: 0;
     height: 0px;
-    background-color: whitesmoke;
+    background-color: white;
     margin: 0;
     overflow: hidden;
     position: absolute;
@@ -144,7 +144,7 @@ body {
             bottom: 0px;
             left: 0px;
             color: black;
-            background-color: whitesmoke;
+            background-color: white;
             width: 40%;
             max-height: 50%;
             text-align: left;
@@ -157,7 +157,7 @@ body {
 
             .news-text {
                 background-color: black;
-                color: whitesmoke;
+                color: white;
             }
 
             img {
@@ -195,7 +195,7 @@ body {
             bottom: 0px;
             left: 0px;
             color: black;
-            background-color: whitesmoke;
+            background-color: white;
             width: 40%;
             max-height: 50%;
             text-align: left;
@@ -208,7 +208,7 @@ body {
 
             .guitar-text {
                 background-color: black;
-                color: whitesmoke;
+                color: white;
             }
 
             img {
@@ -234,7 +234,7 @@ body {
 
 .footer-container-row {
     background-color: black;
-    color: whitesmoke;
+    color: white;
     display: block;
     width: 100%;
 }
@@ -281,7 +281,7 @@ body {
 
         a {
             text-decoration: none;
-            color: whitesmoke;
+            color: white;
         }
 }
 
@@ -289,6 +289,80 @@ body {
     
     a {
         text-decoration: none;
-        color: whitesmoke;
+        color: white;
     }
+}
+
+.gibsonlespaul-classic {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin: 16px 100px 16px;
+    justify-content: center;
+
+        img {
+            width: 453px;
+            height: 453px;
+        }
+
+        .product {
+            display: flex;
+            margin: auto;
+        }
+
+        .gibsonlespaul-classic-list {
+            list-style: none;
+            background-color: white;
+            padding: 12px;
+            width: max-content;
+            margin: 0 12px 0;
+            height: max-content;
+
+                .product-list-item {
+                    border-top: 1px solid;
+                    padding: 6px;
+                }
+                .last {
+                    border-bottom: 1px solid;
+                }
+        }
+
+        .add-to-cart {
+            margin: 0;
+        }
+
+        .price {
+            display: flex;
+            margin: 0;
+            width: max-content;
+            height: max-content;
+            background-color: white;
+            padding: 6px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .add-to-cart-btn {
+
+            border: none;
+            padding: 0;
+            margin-top: 24px;
+
+            a {
+                text-decoration: none;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: white;
+                background-color: black;
+                padding: 12px;
+                font-size: 20px;
+                font-weight: bold;
+                width: 100%;
+                border-radius: 12px;
+
+                    &:hover {
+                        background-color: rgb(59, 59, 59);
+                        color: white;
+                        text-decoration: none;
+                }
+            }
+        }
 }
