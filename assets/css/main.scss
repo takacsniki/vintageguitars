@@ -366,3 +366,30 @@ body {
             }
         }
 }
+
+.new-collection {
+
+    .header {
+        background-color: white;
+        height: max-content;
+        width: 100%;
+
+         .description {
+            display: flex;
+            margin: 0 60px 0;
+            justify-content: center;
+            align-items: center;
+
+                img {
+                    height: 300px;
+                }
+
+                h1 {
+                    margin-left: 60px;
+                    height: max-content;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+         }
+    }
+
+}
