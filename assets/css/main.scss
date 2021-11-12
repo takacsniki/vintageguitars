@@ -366,3 +366,44 @@ body {
             }
         }
 }
+
+.new-collection {
+
+    .header {
+        background-color: white;
+        height: max-content;
+        width: 100%;
+
+         .description {
+            display: flex;
+            margin: 0 60px 0;
+            justify-content: center;
+            align-items: center;
+
+                img {
+                    height: 300px;
+                }
+
+                h1 {
+                    margin-left: 60px;
+                    height: max-content;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+         }
+    }
+
+}
+
+.new-collection-content {
+    margin: 24px 24px 24px;
+    display: flex;
+    margin: 12px 24px 12px;
+
+    img {
+        height: 400px;
+    }
+
+    .new-collection-text {
+        margin-left: 24px;
+    }
+}
