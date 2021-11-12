@@ -393,3 +393,17 @@ body {
     }
 
 }
+
+.new-collection-content {
+    margin: 24px 24px 24px;
+    display: flex;
+    margin: 12px 24px 12px;
+
+    img {
+        height: 400px;
+    }
+
+    .new-collection-text {
+        margin-left: 24px;
+    }
+}
