@@ -400,10 +400,41 @@ body {
     margin: 12px 24px 12px;
 
     img {
-        height: 400px;
+        height: 350px;
     }
 
     .new-collection-text {
-        margin-left: 24px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-self: center;
+        display: block;
+
+        &.bourbon-burst {
+            margin-left: 24px;
+            }
+
+        &.translucent-cherry {
+            margin-right: 24px;
+            }
+    }
+
+    p {
+        text-align: justify;
     }
 }
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    transition: 1s;
+    transition-delay: 1s;
+    opacity: 1;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
