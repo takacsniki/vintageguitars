@@ -438,3 +438,43 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  @media (max-width: 600px) {
+
+    .news-container-link {
+        width: 80%;
+    }
+
+    .news-button-container {
+        width: auto;
+        display: block;
+            
+            img {
+                width: -webkit-fill-available;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+
+    .body {
+        display: inline;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    .footer-column {
+        .bottom {
+            display: block;
+        }
+    }
+  }
