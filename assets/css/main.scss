@@ -3,6 +3,14 @@
     display: block;
 }
 
+.menu-button-mobile-view {
+    display: none;
+}
+
+.dropdown-container-mobile-view {
+    display: none;
+}
+
 body {
     background-color:rgb(236, 236, 236);
 }
@@ -107,16 +115,20 @@ body {
     margin-right: 24px;
 }
 
+.welcome {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    margin-top: 30px;
+}
+
 .about {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     padding-left: 100px;
     padding-right: 600px;
     padding-top: 30px;
-
-        div {
-
-        }
 }
 
 .map {
@@ -439,7 +451,63 @@ body {
     100% { transform: rotate(360deg); }
   }
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
+
+    .mobile-view {
+        display: flex;
+
+        .menu-button-mobile-view {
+            display: block;
+            border: none;
+        }
+
+        .guitar-button {
+            text-decoration: none;
+            border: none;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+        }
+        .button {
+            display: block;
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+        
+        .welcome {
+            margin-top: 0px;
+            padding: 12px;
+            font-size: 12pt;
+            margin: 0;
+        }
+    }
+
+    
+
+    .dropdown-menu-mobile-view {
+        z-index: 1;
+
+            .dropdown-container-mobile-view {
+                z-index: 10;
+                display: none;
+            }
+
+            &:hover {
+                .dropdown-container-mobile-view{
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    background-color: white;
+                    padding: 6px;
+                    margin: auto;
+                    list-style: none;
+
+                    
+                }
+            }
+    }
 
     .news-container-link {
         width: 80%;
@@ -477,4 +545,4 @@ body {
             display: block;
         }
     }
-  }
+}
