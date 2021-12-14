@@ -445,6 +445,8 @@ body {
     transition-delay: 1s;
     opacity: 1;
   }
+
+
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -495,6 +497,7 @@ body {
             }
 
             &:hover {
+
                 .dropdown-container-mobile-view{
                     display: block;
                     position: absolute;
@@ -503,11 +506,34 @@ body {
                     padding: 6px;
                     margin: auto;
                     list-style: none;
-
+                     
+                    .dropdown-item-mobile-view {
+                        margin: 8px;
+                    }
                     
                 }
             }
+            .button-display {
+                display: flex;
+            }
+            .dropdown-icon {
+                .dropdown-guitar-mobile-view {
+                    display: none;
+                }
+                &:hover {
+        
+                    .dropdown-guitar-mobile-view {
+                        display: block;
+                        overflow: hidden;
+                        transition: 1s;
+                        height: 124px;
+                    }
+        
+                }
+            }
     }
+
+    
 
     .news-container-link {
         width: 80%;

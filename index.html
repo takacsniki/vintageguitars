@@ -3,6 +3,8 @@
 <head>
    <link rel="stylesheet" href="assets/css/main.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 <div class="header">
@@ -63,14 +65,19 @@
 <!-- <div class="loader"></div> -->
     <div class="mobile-view">
         <div class="dropdown-menu-mobile-view">
-            <button class="menu-button-mobile-view dropdown-button-mobile-view">
-                    <div class="menu-button-mobile-view button"></div>
-                    <div class="menu-button-mobile-view button"></div>
-                    <div class="menu-button-mobile-view button"></div>
+            <button class="menu-button-mobile-view">
+                <span class="material-icons">
+                    menu
+                    </span>
             </button>
             <ul class="dropdown-container-mobile-view">
-                <button class="menu-button-mobile-view guitar-button"><li class="dropdown-item-mobile-view">Guitars</li></button>
-                    <ul>
+                <div class="button-display">
+                    <li class="dropdown-item-mobile-view">Guitars</li>
+                    <div class="dropdown-icon">
+                        <span class="material-icons">
+                        arrow_forward_ios
+                    </span>
+                    <ul class="dropdown-guitar-mobile-view">
                         <li>Electric guitars</li>
                         <li>Shop by brand</li>
                         <li>Acoustic guitars</li>
@@ -78,6 +85,10 @@
                         <li>Electro-acoustic guitars</li>
                         <li>Shop by brand</li>
                     </ul>
+                    </div>
+                    
+                </div>
+                    
                 <li class="dropdown-item-mobile-view">Accessories</li>
                 <li class="dropdown-item-mobile-view">About</li>
                 <li class="dropdown-item-mobile-view">Contact</li>
