@@ -48,7 +48,7 @@ body {
             border: none;
             height: 100%;
             width: 100%;
-            }
+        }
 }
 
 .dropdown-container {
@@ -85,9 +85,8 @@ body {
             transition: 400ms;
             height: fit-content;
             margin: 0;
-        }
-    }
-        
+            }
+        }      
 }
 
 .dropdown-item {
@@ -99,6 +98,12 @@ body {
             font-size: 15pt;
             line-height: 1.5;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 12px;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
         }
 }
 
@@ -401,7 +406,7 @@ body {
                     height: max-content;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
-         }
+        }
     }
 
 }
@@ -479,10 +484,7 @@ body {
         }
         
         .welcome {
-            margin-top: 0px;
-            padding: 12px;
-            font-size: 12pt;
-            margin: 0;
+            display: none;
         }
     }
 
@@ -498,7 +500,8 @@ body {
 
             &:hover {
 
-                .dropdown-container-mobile-view{
+                
+                .dropdown-container-mobile-view {
                     display: block;
                     position: absolute;
                     width: 100%;
@@ -506,6 +509,12 @@ body {
                     padding: 6px;
                     margin: auto;
                     list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                    }
                      
                     .dropdown-item-mobile-view {
                         margin: 8px;
@@ -516,33 +525,50 @@ body {
             .button-display {
                 display: flex;
             }
+
             .dropdown-icon {
-                .dropdown-guitar-mobile-view {
+
+                .dropdown-guitar-mobile-view, .dropdown-accessories-mobile-view {
                     display: none;
                 }
+
                 &:hover {
+                    
+                    .arrow {
+                        transform: rotate(90deg);
+                        transition: 0.3s;
+                    }
         
-                    .dropdown-guitar-mobile-view {
+                    .dropdown-guitar-mobile-view, .dropdown-accessories-mobile-view {
                         display: block;
                         overflow: hidden;
                         transition: 1s;
-                        height: 124px;
+                        height: fit-content;
+
+                        li {
+                            list-style: none;
+                            padding: 6px;
+                        }
                     }
         
                 }
             }
-    }
+        }
 
     
 
-    .news-container-link {
+    .news-container-link, .guitar-container-link {
         width: 80%;
     }
 
-    .news-button-container {
+    .news-button-container, .guitar-button-container {
         width: auto;
         display: block;
-            
+
+            .guitar-text {
+                width: -webkit-fill-available;
+            }
+
             img {
                 width: -webkit-fill-available;
                 height: 100%;
