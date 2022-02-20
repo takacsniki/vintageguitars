@@ -3,6 +3,8 @@
 <head>
    <link rel="stylesheet" href="assets/css/main.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 <div class="header">
@@ -63,24 +65,46 @@
 <!-- <div class="loader"></div> -->
     <div class="mobile-view">
         <div class="dropdown-menu-mobile-view">
-            <button class="menu-button-mobile-view dropdown-button-mobile-view">
-                    <div class="menu-button-mobile-view button"></div>
-                    <div class="menu-button-mobile-view button"></div>
-                    <div class="menu-button-mobile-view button"></div>
+            <button class="menu-button-mobile-view">
+                <span class="material-icons">
+                    menu
+                    </span>
             </button>
             <ul class="dropdown-container-mobile-view">
-                <button class="menu-button-mobile-view guitar-button"><li class="dropdown-item-mobile-view">Guitars</li></button>
-                    <ul>
-                        <li>Electric guitars</li>
-                        <li>Shop by brand</li>
-                        <li>Acoustic guitars</li>
-                        <li>Shop by brand</li>
-                        <li>Electro-acoustic guitars</li>
-                        <li>Shop by brand</li>
+                
+                    <a href="guitars.html"><li class="dropdown-item-mobile-view">Guitars</li></a>
+                    <div class="dropdown-icon">
+                        <span class="material-icons arrow">
+                        arrow_forward_ios
+                    </span>
+                    <ul class="dropdown-guitar-mobile-view">
+                        <a href="electric.html"><li>Electric guitars</li></a>
+                        <a href="electricbybrand.html"><li>Shop by brand</li></a>
+                        <a href=""><li>Acoustic guitars</li></a>
+                        <a href="acousticbybrand.html"><li>Shop by brand</li></a>
+                        <a href=""><li>Electro-acoustic guitars</li></a>
+                        <a href="electroacousticbybrand.html"><li>Shop by brand</li></a>
                     </ul>
-                <li class="dropdown-item-mobile-view">Accessories</li>
-                <li class="dropdown-item-mobile-view">About</li>
-                <li class="dropdown-item-mobile-view">Contact</li>
+                    </div>
+                
+                
+                    
+                <a href=""><li class="dropdown-item-mobile-view">Accessories</li></a>
+                <div class="dropdown-icon">
+                    <span class="material-icons arrow">
+                    arrow_forward_ios
+                </span>
+                <ul class="dropdown-accessories-mobile-view">
+                    <a href=""><li>All accessories</li></a>
+                    <a href=""><li>Cases</li></a>
+                    <a href=""><li>Stands</li></a>
+                    <a href=""><li>Straps</li></a>
+                    <a href=""><li>Picks</li></a>
+                    <a href=""><li>Capos</li></a>
+                </ul>
+                </div>
+                <a href="about.html"><li class="dropdown-item-mobile-view">About</li></a>
+                <a href="contact.html"><li class="dropdown-item-mobile-view">Contact</li></a>
             </ul>
         </div>
         <h2 class="welcome">Welcome to Vintage Guitars!</h2>
